@@ -283,6 +283,10 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVERS: ${{ vars.EMAIL_RECEIVERS || secrets.EMAIL_RECEIVERS }}
           EMAIL_SENDER_NAME: ${{ vars.EMAIL_SENDER_NAME || secrets.EMAIL_SENDER_NAME || 'daily_stock_analysis股票分析助手' }}
+          STOCK_GROUP_1: ${{ vars.STOCK_GROUP_1 || secrets.STOCK_GROUP_1 }}
+          EMAIL_GROUP_1: ${{ vars.EMAIL_GROUP_1 || secrets.EMAIL_GROUP_1 }}
+          STOCK_GROUP_2: ${{ vars.STOCK_GROUP_2 || secrets.STOCK_GROUP_2 }}
+          EMAIL_GROUP_2: ${{ vars.EMAIL_GROUP_2 || secrets.EMAIL_GROUP_2 }}
           
           # 方式五：Pushover
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
